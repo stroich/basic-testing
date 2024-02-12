@@ -16,11 +16,11 @@ const testCases = [
 
 describe('simpleCalculator', () => {
   test.each(testCases)(
-    "should return correct result for addition",
+    'should return correct result for addition',
     ({ a, b, action, expected }) => {
-      const rawInput = { a, b, action }
+      const rawInput = { a, b, action };
       const result = simpleCalculator(rawInput);
       expect(result).toEqual(expected);
-    }
+    },
   );
 });

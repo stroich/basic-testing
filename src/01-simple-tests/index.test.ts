@@ -1,4 +1,3 @@
-
 import { simpleCalculator, Action } from './index';
 
 describe('simpleCalculator tests', () => {
@@ -7,7 +6,7 @@ describe('simpleCalculator tests', () => {
       a: 5,
       b: 8,
       action: Action.Add,
-    }
+    };
     expect(simpleCalculator(rawInput)).toBe(13);
   });
 
@@ -16,7 +15,7 @@ describe('simpleCalculator tests', () => {
       a: 8,
       b: 5,
       action: Action.Subtract,
-    }
+    };
     expect(simpleCalculator(rawInput)).toBe(3);
   });
 
@@ -25,7 +24,7 @@ describe('simpleCalculator tests', () => {
       a: 5,
       b: 5,
       action: Action.Multiply,
-    }
+    };
     expect(simpleCalculator(rawInput)).toBe(25);
   });
 
@@ -34,7 +33,7 @@ describe('simpleCalculator tests', () => {
       a: 30,
       b: 5,
       action: Action.Divide,
-    }
+    };
     expect(simpleCalculator(rawInput)).toBe(6);
   });
 
@@ -43,7 +42,7 @@ describe('simpleCalculator tests', () => {
       a: 2,
       b: 3,
       action: Action.Exponentiate,
-    }
+    };
     expect(simpleCalculator(rawInput)).toBe(8);
   });
 
@@ -52,7 +51,7 @@ describe('simpleCalculator tests', () => {
       a: 2,
       b: 3,
       action: 'invalid',
-    }
+    };
     expect(simpleCalculator(rawInput)).toBeNull();
   });
 
@@ -61,7 +60,7 @@ describe('simpleCalculator tests', () => {
       a: 'a',
       b: 3,
       action: Action.Add,
-    }
+    };
     expect(simpleCalculator(rawInput)).toBeNull();
   });
 });
